@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../static/result.css" />
+</head>
+  <body>
+    <div class="mainbar">
+      <div id="name">
+        <a href="./main.html">Chomyeon</a>
+      </div>
+      <div class="buttons">
+        <button id="Chatting">Chatting</button>
+        <button id="About">About</button>
+        <button id="Contact">Contact</button>
+        <button id="logOut">Log out</button>
+      </div>
+    </div>
+    <div class="main">
+      <div class="content" style="text-align: center;">
+        <div>
+            <!--몇 % 긴장했는지 보여주는 원 그래프-->
+            <h2>Tension Percentage</h2>
+            <p>발표 총 시간 중 긴장하신 시간의 비율입니다.</p>
+            <canvas id="tensionGraph" width="300" height="300"></canvas>
+            <script src="../static/tensionGraph.js"></script>
+        </div>
+        <div class='graph'>
+           <canvas id="barGraph1" width="40" height="300"></canvas>
+            <canvas id="barGraph2" width="40" height="300"></canvas>
+        </div>
+        <div class='graphh'>
+          <div id='a'>
+            <b>유창성</b>
+          </div>
+          <div id='b'>
+            <b>발음 정확도</b>
+          </div>
+        </div>
+        <div>
+            <!--발표script 받아서 챗지가 총평함-->
+            <h2>발표 내용 평가</h2>
+            <p id="content_result">긍정적인 점:<br>
+              <br>
+              발표의 주제 소개가 명확하고 간결하게 이루어졌습니다.<br>
+              대표적인 정렬 알고리즘들을 나열하여 전체적인 틀을 잡았습니다.<br>
+              발표자의 발음과 억양이 자신감을 보이고 있습니다.<br>
+              <br>
+              부정적인 부분:<br>
+              <br>
+              반복적으로 사용되는 '어'와 '음'이 발표의 흐름을 끊을 수 있습니다.<br>
+              발표의 구성이 좀 더 체계적이면 좋을 것입니다.<br>
+              정렬 알고리즘에 대한 추가적인 내용이 부족하며, 각 알고리즘의 특징과 활용에 대한 깊이 있는 설명이 부족합니다.<br>
+              발음과 표현에 신경쓰며 내용의 체계성과 깊이를 높이는 노력이 필요합니다.<br></p>
+            <script src="../static/content_result.js"></script>
+        </div>
+        <div>
+            <h2>발음 평가</h2>
+            <p id="pron_result">발음 정확도가 훌륭합니다!</p>
+            <script src="../static/pron_result.js"></script>
+        </div>
+    </div>
+    <script src="../static/barGraph.js"></script>
+  </body>
+</html>
+

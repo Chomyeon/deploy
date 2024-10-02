@@ -15,7 +15,7 @@ AI : Python <br><br>
 ### [ Chomyeon 팀 ]
 |임정우|AI|
 |:-:|:-:|
-|최현우|Back-end|
+|천현우|Back-end|
 |오지민|Front-end|
 |백지원|Front-end|
 
